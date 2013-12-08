@@ -2,6 +2,10 @@
 <html>
 <head>
   <title>Meet Jaclyn Jimenez</title>
+  <link href='http://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
+
+  <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.6/jquery.scrollTo.min.js"></script>
   <%= stylesheet_link_tag    "application", :media => "all" %>
@@ -11,11 +15,11 @@
 <body>
 <!--   <div class = "container"> -->
 
-<div class="cover">
+<!-- <div class="cover">
   <div class="col-md-12">
-<!--     <img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash3/c0.187.851.315/p851x315/1262696_10200812803305869_796283946_o.jpg"> -->
+    <img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash3/c0.187.851.315/p851x315/1262696_10200812803305869_796283946_o.jpg">
   </div>
-</div>
+</div> -->
 
 <!-- </div> -->
 <div class="container jnav">
@@ -23,15 +27,15 @@
     <div class="navbar-header">
       <a class="navbar-brand" href="/">Jaclyn E. Jimenez</a>
       <ul class="nav navbar-nav navbar-left">
-        <li class="" id="about-nav"><a href="#about">About</a></li>
-        <li class="" id="work-nav"><a href="#work">Work</a></li>
-        <li class="" id="contact-nav"><a href="#contact">Contact</a></li>
+        <li class="" id="about-nav"><a class="blue-hover" href="#about">ABOUT</a></li>
+        <li class="" id="work-nav"><a class="blue-hover" href="#work">WORK</a></li>
+        <li class="" id="contact-nav"><a class="blue-hover" href="#contact">CONTACT</a></li>
       </ul>
     </div>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="http://twitter.com/jaclynejimenez"><img class="icon-img"src="https://cdn1.iconfinder.com/data/icons/new_twitter_icon/128/bird_twitter_new_black.png"/></a></li>
       <li><a href="http://github.com/jaclynj"><img class="icon-img"src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-github-128.png"/></a></li>
-      <li><a href="www.linkedin.com/in/jaclynejimenez/"><img class="icon-img"src="https://cdn4.iconfinder.com/data/icons/circle-network/52/linkedin_social_circle-128.png"/></a></li>
+      <li><a href="http://www.linkedin.com/in/jaclynejimenez/"><img class="icon-img"src="https://cdn4.iconfinder.com/data/icons/circle-network/52/linkedin_social_circle-128.png"/></a></li>
     </ul>
   </nav>
 </div>
@@ -45,10 +49,14 @@
     <div class="col-md-6 main-img"><img src="https://scontent-a.xx.fbcdn.net/hphotos-prn2/1393666_10201145369539817_1120271368_n.jpg" class="img-rounded img-responsive"/>
     </div>
   </section>
+</div>
+
+<div class="container work-full">
   <!-- WORK -->
   <section id="work">
-  <h1 class="col-md-10">My Work</h1>
-    <div class="col-md-10">
+
+    <h1>My Work</h1><br>
+
       <table class=".table .table-responsive">
         <tr class="col-md-4">
           <td>
@@ -77,43 +85,45 @@
       </table>
     </div>
   </section>
-
+</div>
   <!-- CONTACT -->
+<div class="container">
   <section id="contact">
-    <div class="col-md-7">
-     <h1>Contact Me</h1>
+    <h1 style="text-align:center">Contact Me</h1><br>
+    <div class="col-md-11">
      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, ipsam, ipsa ullam corporis sint debitis temporibus mollitia animi dolores voluptatum tenetur laboriosam at qui repudiandae officiis harum dolore illum quam?</p><br>
       <form class="form-horizontal" role="form">
         <div class="form-group">
-          <label for="name" class="col-sm-2 control-label">Name</label>
-          <div class="col-sm-6">
+          <label for="name" class="col-sm-3 control-label">Name</label>
+          <div class="col-sm-8">
             <input type="name" class="form-control" id="name" placeholder="Name">
           </div>
         </div>
         <div class="form-group">
-          <label for="email" class="col-sm-2 control-label">Email</label>
-          <div class="col-sm-6">
+          <label for="email" class="col-sm-3 control-label">Email</label>
+          <div class="col-sm-8">
             <input type="email" class="form-control" id="email" placeholder="Email">
           </div>
         </div>
         <div class="form-group">
-          <label for="phone" class="col-sm-2 control-label">Phone</label>
-          <div class="col-sm-6">
+          <label for="phone" class="col-sm-3 control-label">Phone</label>
+          <div class="col-sm-8">
             <input type="phone" class="form-control" id="phone" placeholder="Phone">
           </div>
         </div>
         <div class="form-group">
-          <label for="Message" class="col-sm-2 control-label">Message</label>
-          <div class="col-sm-6">
+          <label for="Message" class="col-sm-3 control-label">Message</label>
+          <div class="col-sm-8">
             <textarea type="message" class="form-control" rows="6" id="message" placeholder="Message"></textarea>
           </div>
         </div>
         <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default">Submit</button>
+          <div class="col-sm-offset-6 col-sm-10">
+            <button type="submit" class="btn btn-custom btn-lg">Submit</button>
           </div>
         </div>
       </form>
+      <br>
     </div>
   </section>
 </div>

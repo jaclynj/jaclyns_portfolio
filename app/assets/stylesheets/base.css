@@ -18,8 +18,42 @@ body {
 }
 
 .work-img {
-  height: 160px;
+  height: 200px;
   overflow: hidden;
+}
+
+.btn-custom {
+  background-color: hsl(187, 49%, 43%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3da4b2", endColorstr="#3796a3");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#3da4b2), to(#3796a3));
+  background-image: -moz-linear-gradient(top, #3da4b2, #3796a3);
+  background-image: -ms-linear-gradient(top, #3da4b2, #3796a3);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3da4b2), color-stop(100%, #3796a3));
+  background-image: -webkit-linear-gradient(top, #3da4b2, #3796a3);
+  background-image: -o-linear-gradient(top, #3da4b2, #3796a3);
+  background-image: linear-gradient(#3da4b2, #3796a3);
+  border-color: #3796a3 #3796a3 hsl(187, 49%, 42%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.06);
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn-custom:hover {
+  background-color: hsl(187, 49%, 28%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#297079", endColorstr="#24626a");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#297079), to(#24626a));
+  background-image: -moz-linear-gradient(top, #297079, #24626a);
+  background-image: -ms-linear-gradient(top, #297079, #24626a);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #297079), color-stop(100%, #24626a));
+  background-image: -webkit-linear-gradient(top, #297079, #24626a);
+  background-image: -o-linear-gradient(top, #297079, #24626a);
+  background-image: linear-gradient(#297079, #24626a);
+  border-color: #24626a #24626a hsl(187, 49%, 27%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.06);
+  -webkit-font-smoothing: antialiased;
 }
 
 .icon-img {
@@ -35,17 +69,77 @@ body {
   margin-top: 10px;
 }
 
+nav {
+  font-size: 1.5em;
+}
+
+.jnav a.navbar-brand {
+  font-size: 2em;
+  letter-spacing: 1.5px;
+  color: #40B5B1;
+  font-family: 'Hammersmith One', cursive;
+  line-height: 1em;
+  margin-left: 20px;
+}
+
+.jnav a.navbar-brand:hover {
+  color: #FF6192;
+}
+
+.jnav .navbar-left {
+  padding-left: 30px;
+  line-height: 1em;
+}
+
+.jnav .navbar-left li a {
+  padding: 25px;
+  margin: 0 10px;
+  letter-spacing: 2px;
+  font-family: 'Francois One', sans-serif;
+}
+
+.jnav .navbar-right {
+  margin-top: 7px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.jnav .navbar a.blue-hover:hover {
+  color: #00717D;
+}
+
+.jnav .navbar li.active a {
+  color: #00717D;
+}
+.jnav .navbar li.active a:hover {
+  color: #00717D;
+}
+
+
 section {
   height: 400px;
-  padding: 30px;
-  margin: 25px auto;
+  padding: 40px;
   border-radius: 8px;
+}
+
+
+#about {
+  font-size: 1.8em;
+}
+
+.work-full.container {
+  background-color: #FFFDFE;
+  height: 500px;
+  width: 100%;
+  margin: 40px auto 10px;
+  text-align: center;
 }
 
 footer {
   padding: 20px;
   margin-top: 15px;
-  background-color: #2E3B48;
+  background-color: #00717D;
   height: 200px;
-  color: #D4D9EB;
+  color: #FFF5FC;
+  letter-spacing: 1px;
 }
