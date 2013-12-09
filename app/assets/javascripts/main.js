@@ -1,8 +1,7 @@
 $(document).ready(function(){
-  eventListeners();
-});
 
-eventListeners = function() {
+
+var eventListeners = function() {
 
   $(window).scroll(function(){
   var window_top = $(window).scrollTop() + 8; // the "12" should equal the margin-top value for nav.stick
@@ -41,10 +40,10 @@ eventListeners = function() {
             var divHeight = $(theID).height(); // get the height of the div in question
             if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
                 $(theID+"-nav").addClass("active");
-                console.log("adding class to "+theID)
+                console.log("adding class to "+theID);
             } else {
                 $(theID+"-nav").removeClass("active");
-                console.log("removing class from "+theID)
+                console.log("removing class from "+theID);
             }
         }
 
@@ -59,4 +58,9 @@ eventListeners = function() {
     });
 
 };
+
+
+
+eventListeners();
+});
 
