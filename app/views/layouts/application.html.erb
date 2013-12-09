@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Meet Jaclyn Jimenez</title>
-  <link href='http://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
+  <head>
+    <title>Meet Jaclyn Jimenez</title>
+    <link href='http://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
 
-  <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.6/jquery.scrollTo.min.js"></script>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.6/jquery.scrollTo.min.js"></script>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
 
-  <%= csrf_meta_tags %>
-</head>
-<body>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body id = "all">
 <!--   <div class = "container"> -->
 
 <!-- <div class="cover">
@@ -20,125 +21,29 @@
     <img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash3/c0.187.851.315/p851x315/1262696_10200812803305869_796283946_o.jpg">
   </div>
 </div> -->
-
 <!-- </div> -->
-<div class="container jnav">
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/">Jaclyn E. Jimenez</a>
-      <ul class="nav navbar-nav navbar-left">
-        <li class="" id="about-nav"><a class="blue-hover" href="#about">ABOUT</a></li>
-        <li class="" id="work-nav"><a class="blue-hover" href="#work">WORK</a></li>
-        <li class="" id="contact-nav"><a class="blue-hover" href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="http://twitter.com/jaclynejimenez"><img class="icon-img"src="https://cdn1.iconfinder.com/data/icons/new_twitter_icon/128/bird_twitter_new_black.png"/></a></li>
-      <li><a href="http://github.com/jaclynj"><img class="icon-img"src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-github-128.png"/></a></li>
-      <li><a href="http://www.linkedin.com/in/jaclynejimenez/"><img class="icon-img"src="https://cdn4.iconfinder.com/data/icons/circle-network/52/linkedin_social_circle-128.png"/></a></li>
-    </ul>
-  </nav>
-</div>
-<div class="container">
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="col-md-6">
-      <h1>Hi, I'm Jaclyn!</h1>
-      <p class="tagline">I am a Full-Stack Web Developer with a passion for interactive media and experience overseeing & managing web content. </p>
-    </div>
-    <div class="col-md-6 main-img"><img src="https://scontent-a.xx.fbcdn.net/hphotos-prn2/1393666_10201145369539817_1120271368_n.jpg" class="img-rounded img-responsive"/>
-    </div>
-  </section>
-</div>
 
-<div class="container work-full">
-  <!-- WORK -->
-  <section id="work">
+    <div class="container everything">
 
-    <h1>My Work</h1><br>
+      <%= render "nav" %>
+      <%= render "about" %>
+      <%= render "work" %>
+      <%= render "contact" %>
 
-      <table class=".table .table-responsive">
-        <tr class="col-md-4">
-          <td>
-            <div class="img-thumbnail"><img class="work-img" src="http://puu.sh/5x4yz.png">
-            </div>
-            <h4>Geek Out</h4>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, odit sapiente nam dignissimos ea facere incidunt recusandae atque delectus repellat rerum cumque maxime alias sit deserunt harum possimus iusto ullam!
-          </td>
-        </tr>
-        <tr class="col-md-4">
-          <td>
-            <div class="img-thumbnail"><img class="work-img" src="http://puu.sh/5wUU4.png">
-            </div>
-            <h4>Dancing Cities</h4>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, odit sapiente nam dignissimos ea facere incidunt recusandae atque delectus repellat rerum cumque maxime alias sit deserunt harum possimus iusto ullam!
-          </td>
-        </tr>
-        <tr class="col-md-4">
-          <td>
-            <div class="img-thumbnail"><img class="work-img" src="http://puu.sh/5wUU4.png">
-            </div>
-            <h4>Dancing Cities</h4>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, odit sapiente nam dignissimos ea facere incidunt recusandae atque delectus repellat rerum cumque maxime alias sit deserunt harum possimus iusto ullam!
-          </td>
-        </tr>
-      </table>
     </div>
-  </section>
-</div>
-  <!-- CONTACT -->
-<div class="container">
-  <section id="contact">
-    <h1 style="text-align:center">Contact Me</h1><br>
-    <div class="col-md-11">
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, ipsam, ipsa ullam corporis sint debitis temporibus mollitia animi dolores voluptatum tenetur laboriosam at qui repudiandae officiis harum dolore illum quam?</p><br>
-      <form class="form-horizontal" role="form">
-        <div class="form-group">
-          <label for="name" class="col-sm-3 control-label">Name</label>
-          <div class="col-sm-8">
-            <input type="name" class="form-control" id="name" placeholder="Name">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="email" class="col-sm-3 control-label">Email</label>
-          <div class="col-sm-8">
-            <input type="email" class="form-control" id="email" placeholder="Email">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="phone" class="col-sm-3 control-label">Phone</label>
-          <div class="col-sm-8">
-            <input type="phone" class="form-control" id="phone" placeholder="Phone">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="Message" class="col-sm-3 control-label">Message</label>
-          <div class="col-sm-8">
-            <textarea type="message" class="form-control" rows="6" id="message" placeholder="Message"></textarea>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-sm-offset-6 col-sm-10">
-            <button type="submit" class="btn btn-custom btn-lg">Submit</button>
-          </div>
-        </div>
-      </form>
-      <br>
-    </div>
-  </section>
-</div>
-<footer class="col-md-12">
-  <h4>About This Site</h4>
-  <p>This website and all its content, design and code are ©2013 Jaclyn Jimenez. It was coded by hand using Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, sapiente, delectus, cupiditate distinctio tenetur natus rerum error reiciendis deleniti atque iste eaque cumque repudiandae! Illum doloremque fugiat quia tenetur sit?</p>
-</footer>
+
+  <%= render "footer" %>
+
+
+
 <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
 
   <!-- Optional theme -->
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
 
   <!-- Latest compiled and minified JavaScript -->
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-  <%= javascript_include_tag "application" %>
-</body>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    <%= javascript_include_tag "application" %>
+  </body>
 </html>

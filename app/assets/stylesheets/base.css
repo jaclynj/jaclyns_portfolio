@@ -1,8 +1,9 @@
-body {
-  background-image: url('http://www.freefever.com/stock/white-parchment-paper-texture.jpg');
+#all {
+  color: #444;
+  background: #EDEDED;
 }
 
-.cover {
+/*.cover {
   margin: 0 auto;
   background-color: #2E3B48;
   height: 200px;
@@ -10,15 +11,12 @@ body {
 
 .cover img {
   width: 100%;
-}
+}*/
 
-.main-img {
-  height: 400px;
-  overflow: hidden;
-}
+
 
 .work-img {
-  height: 200px;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -57,12 +55,14 @@ body {
 }
 
 .icon-img {
-  height: 25px;
-  display: inline-block;
+  height: 30px;
+  opacity: 0.8;
+  border-radius: 8px;
 }
 
 .icon-img:hover{
-  -webkit-filter: drop-shadow(1px 1px 2px rgba(200,200,200,1.0));
+  opacity: 1;
+
 }
 
 .jnav {
@@ -70,11 +70,11 @@ body {
 }
 
 nav {
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
 .jnav a.navbar-brand {
-  font-size: 2em;
+  font-size: 1.7em;
   letter-spacing: 1.5px;
   color: #40B5B1;
   font-family: 'Hammersmith One', cursive;
@@ -117,9 +117,10 @@ nav {
 
 
 section {
-  height: 400px;
+/*  height: 400px;
   padding: 40px;
-  border-radius: 8px;
+  margin: 20px;
+  border-radius: 8px;*/
 }
 
 
@@ -127,11 +128,8 @@ section {
   font-size: 1.8em;
 }
 
-.work-full.container {
-  background-color: #FFFDFE;
-  height: 500px;
-  width: 100%;
-  margin: 40px auto 10px;
+#work {
+  background-color: #facade;
   text-align: center;
 }
 
