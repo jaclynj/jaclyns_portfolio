@@ -1,17 +1,18 @@
 JaclynsPortfolio::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
+  root to: 'welcome#index'
+  match '/work' => 'welcome#work', :as => :work
+  match '/contact' => 'welcome#contact', :as => :contact
 
-   constraints(:host => /jaclynjimenez.com/) do
-     root :to => redirect("http://www.jaclynjimenez.com")
-     match '/*path', :to => redirect {|params| "http://www.jaclynjimenez.com/#{params[:path]}"}
+  constraints(:host => /jaclynjimenez.com/) do
+    root :to => redirect("http://www.jaclynjimenez.com")
+    match '/*path', :to => redirect {|params| "http://www.jaclynjimenez.com/#{params[:path]}"}
    end
 
 
 
-  root to: 'welcome#index'
-  match '/work' => 'welcome#work', :as => :work
-  match '/contact' => 'welcome#contact', :as => :contact
+
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
