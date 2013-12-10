@@ -1,3 +1,9 @@
+html {
+  webkit-box-sizing: none;
+  -moz-box-sizing: none;
+  box-sizing: none;
+}
+
 #all h1, h2, h3, h4, h5, h6 {
   color: #434;
   background: #EDEDED;
@@ -8,7 +14,12 @@
 #all {
   font-family: 'Open Sans', sans-serif;
   color: #121212;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
 }
+
+
 
 .placeholder {
   margin: 0 auto;
@@ -64,25 +75,14 @@
 .icon-img {
   height: 30px;
   opacity: 0.8;
-  border-radius: 8px;
 }
 
 .icon-img:hover{
   opacity: 1;
-
 }
 
 #jnav {
   margin-top: 10px;
-}
-
-#jnav.navy-fixed-top {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-}
-
-nav {
   font-size: 1.7em;
 }
 
@@ -92,7 +92,7 @@ nav {
   color: #40B5B1;
   font-family: 'Hammersmith One', cursive;
   line-height: 1em;
-  margin-left: 20px;
+/*  margin-left: 20px;*/
 }
 
 #jnav a.navbar-brand:hover {
@@ -100,7 +100,7 @@ nav {
 }
 
 #jnav .navbar-left {
-  padding-left: 30px;
+/*  padding-left: 50px;*/
   line-height: 1em;
 }
 
@@ -114,7 +114,6 @@ nav {
 #jnav .navbar-right {
   margin-top: 7px;
   display: inline-block;
-  margin-right: 10px;
 }
 
 #jnav .navbar a.blue-hover:hover {
@@ -128,14 +127,24 @@ nav {
   color: #00717D;
 }
 
-
 section {
-  margin: 20px;
+  padding-top: 2%;
 }
 
+p {
+  padding: 2%;
+}
 
-#about {
+#about, #work {
   font-size: 1.35em;
+}
+
+#contact {
+  font-size: 1.7em;
+}
+
+#contact p {
+  padding-bottom: 30%;
 }
 
 .img-responsive {
@@ -147,11 +156,16 @@ display: inline-block;
   opacity: .9;
 }
 
+.table-responsive {
+  width: 100%;
+}
+
 footer {
-  padding: 20px;
+/*  padding: 20px;
   margin-top: 15px;
   background-color: #00717D;
   height: 200px;
   color: #FFF5FC;
-  letter-spacing: 1px;
+  letter-spacing: 1px;*/
 }
+
