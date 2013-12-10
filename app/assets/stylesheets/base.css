@@ -4,11 +4,27 @@ html {
   box-sizing: none;
 }
 
-#all h1, h2, h3, h4, h5, h6, td h3 {
+#all h1, h2, h4, h5, h6 {
   color: #434;
   background: #DADED9;
   font-family: 'Francois One', sans-serif;
   padding: 5px;
+}
+
+#work td h3 {
+  color: #434;
+  font-family: 'Francois One', sans-serif;
+  padding: 5px;
+}
+
+#work h3 {
+  color: #434;
+  font-family: 'Open Sans', sans-serif;
+  padding: 5px;
+}
+
+#work td {
+  padding: 0 25px 0;
 }
 
 #all {
@@ -36,8 +52,11 @@ html {
 
 .work-img {
   width: 100%;
+  height: 280px;
   overflow: hidden;
-  opacity: 0.8;
+  opacity: 0.9;
+  border: 2px solid #FF6192;
+  border-radius: 2px;
 }
 
 .work-img:hover {
@@ -175,6 +194,7 @@ p {
 .img-responsive {
 text-align: right;
 display: inline-block;
+overflow: hidden;
 }
 
 .transp {
