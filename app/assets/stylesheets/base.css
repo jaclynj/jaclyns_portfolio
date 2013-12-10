@@ -4,7 +4,7 @@ html {
   box-sizing: none;
 }
 
-#all h1, h2, h3, h4, h5, h6 {
+#all h1, h2, h3, h4, h5, h6, td h3 {
   color: #434;
   background: #EDEDED;
   font-family: 'Francois One', sans-serif;
@@ -156,8 +156,10 @@ display: inline-block;
   opacity: .9;
 }
 
-.table-responsive {
-  width: 100%;
+table tr td {
+  border-top: 0;
+  border: none;
+  border-color: transparent !important;
 }
 
 footer {

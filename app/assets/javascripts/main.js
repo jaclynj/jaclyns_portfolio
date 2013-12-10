@@ -43,7 +43,7 @@ var eventListeners = function() {
   });
 
   $('.navbar-left a').click(function(e){
-    e.preventDefault();
+
     $('html,body').scrollTo(this.hash, 500);
   });
 
