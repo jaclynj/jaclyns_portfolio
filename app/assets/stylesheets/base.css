@@ -6,7 +6,7 @@ html {
 
 #all h1, h2, h3, h4, h5, h6, td h3 {
   color: #434;
-  background: #EDEDED;
+  background: #DADED9;
   font-family: 'Francois One', sans-serif;
   padding: 5px;
 }
@@ -17,6 +17,7 @@ html {
   width: 100%;
   padding: 0;
   margin: 0 auto;
+  background-color: #FAFAFA;
 }
 
 
@@ -36,6 +37,11 @@ html {
 .work-img {
   width: 100%;
   overflow: hidden;
+  opacity: 0.8;
+}
+
+.work-img:hover {
+  opacity: 1;
 }
 
 .btn-custom {
@@ -92,15 +98,19 @@ html {
   color: #40B5B1;
   font-family: 'Hammersmith One', cursive;
   line-height: 1em;
-  margin-left: 20px;
+/*  margin-left: 20px;*/
 }
 
 #jnav a.navbar-brand:hover {
   color: #FF6192;
 }
 
+#jnav .navbar-fixed-top {
+  padding-left: 10.975%;
+}
+
 #jnav .navbar-left {
-  padding-left: 50px;
+  padding-left: 40px;
   line-height: 1em;
 }
 
@@ -127,8 +137,23 @@ html {
   color: #00717D;
 }
 
+.big-margin {
+  margin-top: 9%;
+}
+
+#all a {
+  color: #40B5B1;
+  text-decoration: none;
+}
+
+#all a:hover {
+  color: #2A8188;
+}
+
 section {
-  padding-top: 2%;
+/*  padding: 3%;*/
+  background-color: #FAFAFA;
+/*  margin: 2%;*/
 }
 
 p {

@@ -1,49 +1,21 @@
 $(document).ready(function(){
 
-// //thing for class
-//   $(document).on("ajax:before", function(){
-//     $("#repos").html('<img src="assets/ajax-loader.gif" alt="loading...">')
-//   });
-
-
-
-// $(document).on("ajaxStart", function(){
-//   console.log("ajax start");
-// });
-
-// $(".butts").on("click", function(evnt, data){
-//     console.log( evnt, data);
-//     evnt.preventDefault();
-//     $.ajax({
-//         url: "https://api.github.com/users/jaclynj/repos",
-//         dataType: "json",
-//         type: "get",
-//         success:function(data){
-//             setTimeout(function(){
-//                 var m = _.map(data, function(obj) {return obj['name'] + "<br>"});
-//                 $('#repos').html(m);
-//             }, 1000);
-//         }
-//     });
-// });
-// //end thing for class
-
-
-
 var eventListeners = function() {
 
   $(window).scroll(function(){
   var window_top = $(window).scrollTop() - 1; // the "12" should equal the margin-top value for nav.stick
-  var div_top = $('#jnav').offset().top;
+  var div_top = $('#jnav').offset().top - 3;
     if (window_top > div_top) {
       $('nav').addClass('navbar-fixed-top');
+      $('#about').addClass('big-margin');
     } else {
       $('nav').removeClass('navbar-fixed-top');
+      $('#about').removeClass('big-margin');
     }
   });
 
   $('.navbar-left a').click(function(e){
-
+    e.preventDefault();
     $('html,body').scrollTo(this.hash, 500);
   });
 
@@ -59,9 +31,6 @@ var eventListeners = function() {
         var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
         var windowHeight = $(window).height(); // get the height of the window
         var docHeight = $(document).height();
-        // var theID;
-        // var divPos;
-        // var divHeight;
 
         for (var i=0; i < aArray.length; i++) {
             var theID = aArray[i];
