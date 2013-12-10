@@ -92,7 +92,7 @@ html {
   color: #40B5B1;
   font-family: 'Hammersmith One', cursive;
   line-height: 1em;
-/*  margin-left: 20px;*/
+  margin-left: 20px;
 }
 
 #jnav a.navbar-brand:hover {
@@ -100,7 +100,7 @@ html {
 }
 
 #jnav .navbar-left {
-/*  padding-left: 50px;*/
+  padding-left: 50px;
   line-height: 1em;
 }
 
