@@ -4,20 +4,21 @@ html {
   box-sizing: none;
 }
 
-#all h1, h2, h4, h5, h6 {
+#all h1, h3, h4, h5, h6 {
   color: #434;
-  background: #DADED9;
+  background: #FAFAFA;
+  font-family: 'Francois One', sans-serif;
+  padding: 5px;
+  border: 1px solid #D3F2F7;
+}
+
+#work td h2 {
+  color: #434;
   font-family: 'Francois One', sans-serif;
   padding: 5px;
 }
 
-#work td h3 {
-  color: #434;
-  font-family: 'Francois One', sans-serif;
-  padding: 5px;
-}
-
-#work h3 {
+#work h2 {
   color: #434;
   font-family: 'Open Sans', sans-serif;
   padding: 5px;
@@ -169,14 +170,22 @@ html {
   color: #2A8188;
 }
 
+.github-link {
+  padding: 30px;
+}
+
 section {
-/*  padding: 3%;*/
-  background-color: #FAFAFA;
-/*  margin: 2%;*/
+  padding: 4%;
+  background-color: #EBEBEB;
+  margin: 4%;
+  border-radius: 5px;
+  border: 1px solid #D3F2F7;
 }
 
 p {
-  padding: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
 }
 
 #about, #work {
@@ -184,7 +193,7 @@ p {
 }
 
 #contact {
-  font-size: 1.7em;
+  font-size: 2em;
 }
 
 #contact p {

@@ -28,7 +28,7 @@ var eventListeners = function() {
     } // this for loop fills the aArray with attribute href values
 
     $(window).scroll(function(){
-        var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
+        var windowPos = $(window).scrollTop() + 200 ; // get the offset of the window from the top of page
         var windowHeight = $(window).height(); // get the height of the window
         var docHeight = $(document).height();
 
