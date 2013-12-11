@@ -5,6 +5,7 @@ var eventListeners = function() {
   $(window).scroll(function(){
   var window_top = $(window).scrollTop() - 1; // the "12" should equal the margin-top value for nav.stick
   var div_top = $('#jnav').offset().top - 3;
+  if ($(window).width() > 1200) {
     if (window_top > div_top) {
       $('nav').addClass('navbar-fixed-top');
       $('#about').addClass('big-margin');
@@ -12,6 +13,7 @@ var eventListeners = function() {
       $('nav').removeClass('navbar-fixed-top');
       $('#about').removeClass('big-margin');
     }
+  }
   });
 
   $('.navbar-left a').click(function(e){
