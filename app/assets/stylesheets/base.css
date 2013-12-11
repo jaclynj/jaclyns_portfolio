@@ -6,10 +6,14 @@ html {
 
 #all h1, h3, h4, h5, h6 {
   color: #434;
-  background: #FAFAFA;
+/*  background: #FAFAFA;*/
   font-family: 'Francois One', sans-serif;
-  padding: 5px;
-  border: 1px solid #D3F2F7;
+  padding-bottom: 2%;
+/*  border: 1px solid #D3F2F7;*/
+}
+
+h1 {
+  font-size: 2em;
 }
 
 #work td h2 {
@@ -56,8 +60,9 @@ html {
   height: 280px;
   overflow: hidden;
   opacity: 0.9;
-  border: 2px solid #FF6192;
+  border: 1.5px solid #40B5B1;
   border-radius: 2px;
+  margin-bottom: 12px;
 }
 
 .work-img:hover {
