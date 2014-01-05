@@ -1,9 +1,10 @@
 section {
   padding: 4%;
   background-color: #FFFBEF;
-  margin: 4%;
+  margin: 6% 12%;
   border-radius: 5px;
-  border: 1px solid #D3F2F7;
+/*  border: 1px solid #D3F2F7;*/
+ box-shadow: 1px 1px 3px 2px #403F3C;
 }
 
 p {
@@ -55,20 +56,20 @@ p {
 
 /*about's class when nav is sticky */
 .big-margin {
-  margin-top: 9%;
+  margin-top: 10.5%;
 }
 
 
-#about, #work {
+#about, #work, #contact {
   font-size: 1.35em;
 }
 
 #contact {
-  font-size: 2.3em;
   margin-bottom: 20%;
 }
 
 #contact p {
+  font-size: 1.5em;
   padding-bottom: 10%;
 }
 

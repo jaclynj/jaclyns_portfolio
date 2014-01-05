@@ -17,6 +17,10 @@
 }
 
 .navbar-brand, .navbar-left, #navbar-right {
+  margin: 0 auto;
+}
+
+.navbar-brand, #navbar-right {
   margin: 1% auto;
 }
 
@@ -44,7 +48,7 @@
 }
 
 #jnav .navbar-left li {
-  padding: 0 2%;
+  padding: 2% 2%;
 }
 
 #jnav .navbar-left li a {
@@ -79,11 +83,32 @@
   color: #00717D;
 }
 
+#jnav .navbar li.active {
+/* IE10 Consumer Preview */
+background-image: -ms-linear-gradient(bottom, #FFFAF0 0%, #DBD7CE 100%);
+
+/* Mozilla Firefox */
+background-image: -moz-linear-gradient(bottom, #FFFAF0 0%, #DBD7CE 100%);
+
+/* Opera */
+background-image: -o-linear-gradient(bottom, #FFFAF0 0%, #DBD7CE 100%);
+
+/* Webkit (Safari/Chrome 10) */
+background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFAF0), color-stop(1, #DBD7CE));
+
+/* Webkit (Chrome 11+) */
+background-image: -webkit-linear-gradient(bottom, #FFFAF0 0%, #DBD7CE 100%);
+
+/* W3C Markup, IE10 Release Preview */
+background-image: linear-gradient(to top, #FFFAF0 0%, #DBD7CE 100%);
+}
+
 
 #navbar-right td {
   margin: 0 auto;
   padding: 0 5%;
 }
+
 
 .icon-img {
   opacity: 0.8;

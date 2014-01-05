@@ -6,7 +6,7 @@ html {
 
 #all {
   font-family: 'Open Sans', sans-serif;
-  color: #121212;
+  color: #403F3C;
   width: 100%;
   padding: 0;
   margin: 0 auto;
@@ -16,7 +16,7 @@ html {
 }
 
 #all h1, h3, h4, h5, h6 {
-  color: #434;
+  color: #403F3C;
   font-family: 'Francois One', sans-serif;
   padding-bottom: 2%;
 }

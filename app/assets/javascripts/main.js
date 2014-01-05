@@ -3,18 +3,25 @@ $(document).ready(function(){
 var eventListeners = function() {
 
   $(window).scroll(function(){
-  var window_top = $(window).scrollTop() - 1; // the "12" should equal the margin-top value for nav.stick
-  var div_top = $('#jnav').offset().top - 3;
-  if ($(window).width() > 1200) {
-    if (window_top > div_top) {
+    detectNav();
+  });
+
+    $(window).resize(function() {
+    // This will execute whenever the window is resized
+      detectNav();
+    });
+
+  var detectNav = function(){
+    var window_top = $(window).scrollTop() - 1; // the "12" should equal the margin-top value for nav.stick
+    var div_top = $('#jnav').offset().top - 3;
+    if ($(window).width() > 1080 && window_top > div_top) {
       $('nav').addClass('navbar-fixed-top');
       $('#about').addClass('big-margin');
     } else {
       $('nav').removeClass('navbar-fixed-top');
       $('#about').removeClass('big-margin');
     }
-  }
-  });
+  };
 
   $('.navbar-left a').click(function(e){
     e.preventDefault();
