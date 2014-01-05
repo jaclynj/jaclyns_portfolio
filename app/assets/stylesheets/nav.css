@@ -47,8 +47,13 @@
   color: #FF6192;
 }
 
+#jnav .navbar-brand li {
+  text-align: right;
+}
+
 #jnav .navbar-left li {
   padding: 2% 2%;
+  text-align: center;
 }
 
 #jnav .navbar-left li a {
