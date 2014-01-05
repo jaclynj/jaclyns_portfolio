@@ -18,11 +18,11 @@ html {
 #all h1, h3, h4, h5, h6 {
   color: #403F3C;
   font-family: 'Francois One', sans-serif;
-  padding-bottom: 2%;
 }
 
 #all h1 {
   font-size: 2.2em;
+  margin-bottom: 1%;
 }
 
 .placeholder {
