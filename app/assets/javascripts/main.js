@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  detectHeight();
 
 var eventListeners = function() {
 
@@ -45,7 +44,7 @@ var detectHeight = function() {
     $('#navbar-right').removeClass("col-sm-2");
   }
 };
-
+  detectHeight();
 
   $('.navbar-left a').click(function(e){
     e.preventDefault();
