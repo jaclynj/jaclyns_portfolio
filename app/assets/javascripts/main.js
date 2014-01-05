@@ -6,10 +6,9 @@ var eventListeners = function() {
     detectNav();
   });
 
-    $(window).resize(function() {
-    // This will execute whenever the window is resized
-      detectNav();
-    });
+  $(window).resize(function() {
+    detectNav();
+  });
 
   var detectNav = function(){
     var window_top = $(window).scrollTop() - 1; // the "12" should equal the margin-top value for nav.stick
@@ -25,7 +24,9 @@ var eventListeners = function() {
 
   $('.navbar-left a').click(function(e){
     e.preventDefault();
-    $('html,body').scrollTo(this.hash, 500);
+    // scrollEl = ($(this.hash).offset().top - 100);
+    // window.scrollTo( 0, scrollEl, { duration: "slow" } );
+    $('html,body').scrollTo(($(this.hash).offset().top - 90), 800);
   });
 
   var aChildren = $(".navbar-left li").children(); // find the a children of the list items
