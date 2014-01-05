@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  detectHeight();
 
 var eventListeners = function() {
 
