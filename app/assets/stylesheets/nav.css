@@ -14,11 +14,19 @@
   margin: 0 auto;
   padding: 0 1%;
   box-shadow: 1px 5px 4px -4px #403F3C;
-  max-height: 80px;
+}
+
+#jnav .thin-nav {
+  max-height: 60px;
+}
+
+#jnav .fat-nav {
+
 }
 
 .navbar-brand, .navbar-left, #navbar-right {
   margin: 0 auto;
+  display: inline-block;
 }
 
 .navbar-brand, #navbar-right {
@@ -49,8 +57,9 @@
 }
 
 #jnav .navbar-brand li {
-  text-align: right;
+  text-align: center;
 }
+
 
 #jnav .navbar-left li {
   padding: 2% 2%;
