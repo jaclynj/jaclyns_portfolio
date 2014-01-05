@@ -1,0 +1,79 @@
+section {
+  padding: 4%;
+  background-color: #FFFBEF;
+  margin: 4%;
+  border-radius: 5px;
+  border: 1px solid #D3F2F7;
+}
+
+p {
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+}
+
+#work td h2 {
+  color: #434;
+  font-family: 'Francois One', sans-serif;
+  padding: 5px;
+}
+
+#work a {
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+#skills {
+  border: 2px solid #FAFAFA;
+  padding: 2%;
+}
+
+#work h2 {
+  color: #40B5B1;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0, 5px, 5px, 5px;
+  margin: 0;
+}
+
+#work td {
+  padding: 0 25px 0;
+}
+
+.work-img {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  opacity: 0.8;
+  border: 1.5px solid #40B5B1;
+  border-radius: 2px;
+  margin-bottom: 12px;
+}
+
+.work-img:hover {
+  opacity: 1;
+}
+
+/*about's class when nav is sticky */
+.big-margin {
+  margin-top: 9%;
+}
+
+
+#about, #work {
+  font-size: 1.35em;
+}
+
+#contact {
+  font-size: 2.3em;
+  margin-bottom: 20%;
+}
+
+#contact p {
+  padding-bottom: 10%;
+}
+
+.img-responsive {
+text-align: right;
+display: inline-block;
+overflow: hidden;
+}

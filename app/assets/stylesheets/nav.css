@@ -1,0 +1,97 @@
+#jnav .navbar-fixed-top {
+  margin: 0 auto;
+  padding: 0;
+  box-shadow: 1px 5px 4px -4px #403F3C;
+}
+
+#jnav {
+  margin: 0 auto;
+  border-top: 1px solid #747269;
+}
+
+#jnav .navbar {
+  font-size: 1.5em;
+  margin: 0 auto;
+  padding: 0 1%;
+  box-shadow: 1px 5px 4px -4px #403F3C;
+}
+
+.navbar-brand, .navbar-left, #navbar-right {
+  margin: 1% auto;
+}
+
+
+.nav-bg {
+  background-color: #FFFBEF;
+}
+
+#jnav .navbar-brand {
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  color: #40B5B1;
+  font-family: 'Hammersmith One', cursive;
+  padding: 0;
+}
+
+#jnav .navbar-brand a {
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1em;
+}
+
+#jnav .navbar-brand a:hover {
+  color: #FF6192;
+}
+
+#jnav .navbar-left li {
+  padding: 0 2%;
+}
+
+#jnav .navbar-left li a {
+  letter-spacing: 1.6px;
+  font-family: 'Francois One', sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1em;
+}
+
+.navbar-left ul {
+  margin: 0 auto;
+  padding: 0;
+}
+
+#jnav .navbar-right {
+  padding: 0;
+  display: inline-block;
+}
+#jnav .navbar li {
+  list-style: none;
+}
+
+#jnav .navbar a.blue-hover:hover {
+  color: #00717D;
+}
+
+#jnav .navbar li.active a {
+  color: #00717D;
+}
+#jnav .navbar li.active a:hover {
+  color: #00717D;
+}
+
+
+#navbar-right td {
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.icon-img {
+  opacity: 0.8;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.icon-img:hover{
+  opacity: 1;
+}
+

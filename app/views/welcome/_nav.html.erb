@@ -1,58 +1,63 @@
 <div id="jnav">
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="navbar-header">
+<!--   nav is given the navbar fixed top class -->
+  <nav class="nav navbar nav-bg col-sm-12" role="navigation">
 
-      <a class="navbar-brand" href="/">
-        Jaclyn E. Jimenez
-      </a>
+      <ul class="navbar-brand col-sm-4">
+        <li class="col-sm-12">
+          <a href="/">
+            Jaclyn E. Jimenez
+          </a>
+        </li>
+      </ul>
 
-      <ul class="nav navbar-nav navbar-left">
-
-        <li class="" id="about-nav">
+      <ul class="navbar-left col-sm-5">
+        <li class="col-sm-4" id="about-nav">
           <a class="blue-hover" href="#about">
             ABOUT
           </a>
         </li>
 
-        <li class="" id="work-nav">
+        <li class="col-sm-4" id="work-nav">
           <a class="blue-hover" href="#work">
             WORK
           </a>
         </li>
 
-        <li class="" id="contact-nav">
+        <li class="col-sm-4" id="contact-nav">
           <a class="blue-hover" href="#contact">
             CONTACT
           </a>
         </li>
+
       </ul>
 
-    <ul class="nav navbar-nav navbar-right">
+      <table class="col-sm-2" id="navbar-right">
+        <tr class="navbar-right">
+          <td class="col-sm-3">
+            <a href="http://twitter.com/jaclynejimenez">
+            <%= image_tag "twitter.svg", class: "icon-img img-responsive" %>
+            </a>
+          </td>
 
-      <li>
-        <a href="http://twitter.com/jaclynejimenez">
-          <%= image_tag "twitter.svg", class: "icon-img" %>
-        </a>
-      </li>
+          <td class="col-sm-3">
+            <a href="http://github.com/jaclynj">
+              <%= image_tag "github.svg", class: "icon-img img-responsive" %>
+            </a>
+          </td>
 
-      <li>
-        <a href="http://github.com/jaclynj">
-          <%= image_tag "github.svg", class: "icon-img" %>
-        </a>
-      </li>
+          <td class="col-sm-3">
+            <a href="http://www.linkedin.com/in/jaclynejimenez/">
+              <%= image_tag "linkedin.svg", class: "icon-img img-responsive" %>
+            </a>
+          </td>
 
-      <li>
-        <a href="http://www.linkedin.com/in/jaclynejimenez/">
-          <%= image_tag "linkedin.svg", class: "icon-img" %>
-        </a>
-      </li>
+          <td class="col-sm-3">
+            <a href="mailto:jaclynejimenez@gmail.com">
+              <%= image_tag "mail.svg", class: "icon-img img-responsive" %>
+            </a>
+          </td>
+        </tr>
+      </table>
 
-      <li>
-        <a href="mailto:jaclynejimenez@gmail.com">
-          <%= image_tag "mail.svg", class: "icon-img" %>
-        </a>
-      </li>
-
-    </ul>
   </nav>
 </div>
