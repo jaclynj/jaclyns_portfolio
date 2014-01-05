@@ -1,10 +1,15 @@
+#main-sections {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 section {
   padding: 4%;
   background-color: #FFFBEF;
   margin: 6% 12%;
   border-radius: 5px;
-/*  border: 1px solid #D3F2F7;*/
- box-shadow: 1px 1px 3px 2px #403F3C;
+  /*  border: 1px solid #D3F2F7;*/
+  box-shadow: 1px 1px 3px 2px #403F3C;
 }
 
 p {
