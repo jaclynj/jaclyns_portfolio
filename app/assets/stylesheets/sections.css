@@ -52,7 +52,6 @@ p {
 }
 
 .work-img {
-  width: 100%;
   height: 350px;
   overflow: hidden;
   opacity: 1;
@@ -63,10 +62,12 @@ p {
 
 .work-img img {
   margin: -50px auto;
+  width: 100%;
 }
 
 .skill-savvy img {
   margin: -15px auto;
+  overflow: hidden;
 }
 
 .work-img:hover {
