@@ -2,6 +2,9 @@ html {
   webkit-box-sizing: none;
   -moz-box-sizing: none;
   box-sizing: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 #all {
