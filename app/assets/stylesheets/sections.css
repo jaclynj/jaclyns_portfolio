@@ -17,6 +17,10 @@ p {
   padding-right: 2%;*/
 }
 
+#about img {
+  border: 2px solid #403F3C;
+}
+
 #work a {
 
   font-family: 'Open Sans', sans-serif;
