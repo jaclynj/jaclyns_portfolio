@@ -17,6 +17,7 @@ html {
   background-color: #FFFBEF;
   letter-spacing: 0.5px;
   background-image: url('sand.jpg');
+  background-attachment: fixed
 }
 
 #all h1, h3, h4, h5, h6 {
