@@ -55,7 +55,7 @@ html {
 .top-cover {
   min-height: 100%;
   width: 100%;
-  background-color: #399FA8;
+/*  background-color: #399FA8;*/
   background-image: url("nyc-wallpaper.jpg");
   background-attachment: fixed;
   background-size: 100% 100%;
