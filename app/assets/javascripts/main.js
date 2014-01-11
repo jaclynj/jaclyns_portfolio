@@ -113,5 +113,5 @@ eventListeners();
 
 $(window).load( function(){
   $("#loading").css("display", "none");
-  $(".content").css("display", "block");
+  $(".content").fadeIn(900);
 });
