@@ -41,8 +41,10 @@ var eventListeners = function() {
   };
 
 var detectHeight = function() {
-  if ($(window).width() >= 999) {
+  if ($(window).width() >= 1085) {
     $('#jackieIMG').css("display","inline");
+    $('#intro').removeClass("col-md-12");
+    $('#intro').addClass("col-md-6");
     $('nav').addClass('thin-nav');
     $('nav').removeClass('fat-nav');
     $('.navbar-brand').addClass("col-sm-4");
@@ -52,6 +54,8 @@ var detectHeight = function() {
     $('#navbar-right').addClass("col-sm-2");
     $('#navbar-right').removeClass("col-sm-3");
   } else {
+    $('#intro').addClass("col-md-12");
+    $('#intro').removeClass("col-md-6");
     $('#jackieIMG').css("display","none");
     $('nav').removeClass('thin-nav');
     $('nav').addClass('fat-nav');

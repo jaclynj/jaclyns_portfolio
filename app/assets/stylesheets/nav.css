@@ -44,11 +44,12 @@
   color: #40B5B1;
   font-family: 'Hammersmith One', cursive;
   padding: 0;
+  bottom: 4px;
 }
 
 #jnav .navbar-brand a {
-  margin: 0 auto;
   padding: 0;
+  margin: 0 auto;
   line-height: 1em;
 }
 
