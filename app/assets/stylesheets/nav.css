@@ -82,10 +82,10 @@
 #jnav .navbar-right {
   padding: 0;
   display: inline-block;
+  max-height: 30px;
 }
 
 #jnav .navbar-right img {
-  max-height: 100%;
   width: 100%;
   display: block;
 }
