@@ -64,7 +64,10 @@ section {
 }
 
 .work-img:hover {
-  opacity: 0.9;
+  opacity: 0.95;
+  transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out;
 }
 
 /*about's class when nav is sticky */
