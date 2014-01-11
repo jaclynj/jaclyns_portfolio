@@ -3,6 +3,7 @@ $(document).ready(function(){
 var eventListeners = function() {
 
   $(window).scroll(function(){
+    // topScroll();
     detectNav();
   });
 
@@ -10,6 +11,17 @@ var eventListeners = function() {
     detectNav();
     detectHeight();
   });
+
+  // var topScroll = function() {
+  //   var window_top = $(window).scrollTop() - 1;
+  //   var div_top = $('#jnav').offset().top;
+  //   if (window_top = 6) {
+  //     $(window).on("scroll", function(){
+  //       $('html,body').scrollTo(div_top, 800);
+  //       $(window).off("scroll");
+  //     });
+  //   }
+  // };
 
   var detectNav = function(){
     var window_top = $(window).scrollTop() - 1; // the "12" should equal the margin-top value for nav.stick
@@ -24,7 +36,8 @@ var eventListeners = function() {
   };
 
 var detectHeight = function() {
-  if ($(window).width() >= 1085) {
+  if ($(window).width() >= 999) {
+    $('#jackieIMG').css("display","inline");
     $('nav').addClass('thin-nav');
     $('nav').removeClass('fat-nav');
     $('.navbar-brand').addClass("col-sm-4");
@@ -34,6 +47,7 @@ var detectHeight = function() {
     $('#navbar-right').addClass("col-sm-2");
     $('#navbar-right').removeClass("col-sm-3");
   } else {
+    $('#jackieIMG').css("display","none");
     $('nav').removeClass('thin-nav');
     $('nav').addClass('fat-nav');
     $('.navbar-brand').removeClass("col-sm-4");
@@ -87,7 +101,7 @@ var detectHeight = function() {
         }
     });
 
-};
+}
 
 
 
