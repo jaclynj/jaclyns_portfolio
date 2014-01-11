@@ -12,6 +12,22 @@ html {
   right: 0;
   bottom: 0;
 }
+.content {
+  display: none;
+}
+
+#loading {
+  top: 200px;
+  left: 45%;
+  width: 256px;
+  height: 100%;
+  margin: auto;
+  position: absolute;
+  z-index: 1000;
+  background: url("loader.gif");
+  background-repeat: no-repeat;
+  cursor: wait;
+}
 
 #all {
   font-size: 18px;
@@ -39,10 +55,10 @@ html {
 .top-cover {
   min-height: 100%;
   width: 100%;
-/*  background-color: #399FA8;*/
+  background-color: #399FA8;
   background-image: url("nyc-wallpaper.jpg");
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 100% 100%;
   overflow: hidden;
   margin: 0 auto;
   color: #FFFBEF;
