@@ -54,6 +54,9 @@ section {
   border: 1.5px solid #40B5B1;
   border-radius: 2px;
   margin-bottom: 12px;
+  transition: opacity .4s ease-in-out;
+  -moz-transition: opacity .4s ease-in-out;
+  -webkit-transition: opacity .4s ease-in-out;
 }
 
 .work-img img {

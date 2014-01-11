@@ -138,9 +138,15 @@ background-image: linear-gradient(to top, #FFFAF0 0%, #DBD7CE 100%);
   opacity: 0.8;
   margin: 0 auto;
   padding: 0;
+  transition: opacity .4s ease-in-out;
+  -moz-transition: opacity .4s ease-in-out;
+  -webkit-transition: opacity .4s ease-in-out;
 }
 
 .icon-img:hover{
   opacity: 1;
+  transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out;
 }
 
