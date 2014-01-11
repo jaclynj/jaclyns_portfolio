@@ -34,9 +34,9 @@ html {
   width: 100%;
   padding: 0;
   margin: 0 auto;
-  background-color: #FFFBEF;
+  background-color: #D4D0B8;
   letter-spacing: 0.5px;
-  background-image: url('sand.jpg');
+/*  background-image: url('sand.jpg');*/
   background-attachment: fixed;
   height: 100%;
 }

@@ -1,10 +1,5 @@
 $(document).ready(function(){
 
-$(window).load( function(){
-  $("#loading").css("display", "none");
-  $(".content").css("display", "block");
-});//preloader
-
 var eventListeners = function() {
 
   $(window).scroll(function(){
@@ -110,10 +105,13 @@ var detectHeight = function() {
         }
     });
 
-}
-
+};
 
 
 eventListeners();
 });
 
+$(window).load( function(){
+  $("#loading").css("display", "none");
+  $(".content").css("display", "block");
+});
